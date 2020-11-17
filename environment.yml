@@ -1,0 +1,23 @@
+name: jupytext-demo
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - jupyterlab
+
+  # List this environment among the kernels
+  - nb_conda_kernels
+
+  # Jupytext & nodejs to build the extension
+  - jupytext
+  - nodejs
+  
+  # Plotly express
+  - plotly
+  - ipywidgets>=7.5
+  - pandas
+
+  # Lint
+  - flake8
+  - pylint
+  - black
